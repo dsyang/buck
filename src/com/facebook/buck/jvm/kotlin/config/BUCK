@@ -1,1 +1,14 @@
-standard_java_library()
+kotlin_library(
+  name = 'config',
+  srcs = glob(['*.kt']),
+  deps = [
+    '//src/com/facebook/buck/cli:config',
+    '//src/com/facebook/buck/io:executable-finder',
+    '//src/com/facebook/buck/rules:build_rule',
+    '//third-party/java/guava:guava',
+    '//third-party/kotlin/kotlinc/lib:runtime',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)

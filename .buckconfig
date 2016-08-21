@@ -46,3 +46,5 @@
 [test]
     ; Maximum timeout of 1 minute per test.
     timeout = 60000
+[kotlin]
+    compiler = third-party/kotlin/kotlinc/bin/kotlinc
