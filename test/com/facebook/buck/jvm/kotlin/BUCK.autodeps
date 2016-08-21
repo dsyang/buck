@@ -1,8 +1,8 @@
-#@# GENERATED FILE: DO NOT MODIFY 606f09013dd3de3f11a98efda61601a627711a6b #@#
+#@# GENERATED FILE: DO NOT MODIFY c0b6652d76a1bf5eabf18b263717f86137bb40a2 #@#
 {
   "kotlin" : {
     "deps" : [
-      "//src/com/facebook/buck/jvm/kotlin:kotlin",
+      "//src/com/facebook/buck/jvm/kotlin/config:config",
       "//src/com/facebook/buck/util:exceptions",
       "//test/com/facebook/buck/cli:FakeBuckConfig",
       "//test/com/facebook/buck/jvm/kotlin:testutil",
@@ -13,7 +13,7 @@
   },
   "testutil" : {
     "deps" : [
-      "//src/com/facebook/buck/jvm/kotlin:kotlin",
+      "//src/com/facebook/buck/jvm/kotlin/config:config",
       "//src/com/facebook/buck/util:exceptions",
       "//test/com/facebook/buck/cli:FakeBuckConfig",
       "//third-party/java/junit:junit"

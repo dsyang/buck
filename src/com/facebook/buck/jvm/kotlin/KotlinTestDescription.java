@@ -22,6 +22,7 @@ import com.facebook.buck.jvm.java.JavaOptions;
 import com.facebook.buck.jvm.java.JavaTest;
 import com.facebook.buck.jvm.java.JavacOptions;
 import com.facebook.buck.jvm.java.TestType;
+import com.facebook.buck.jvm.kotlin.config.KotlinBuckConfig;
 import com.facebook.buck.model.BuildTarget;
 import com.facebook.buck.parser.NoSuchBuildTargetException;
 import com.facebook.buck.rules.BuildRule;

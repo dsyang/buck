@@ -1,4 +1,4 @@
-#@# GENERATED FILE: DO NOT MODIFY 523d543adef098933595342fbacfcf4b6b0f63c4 #@#
+#@# GENERATED FILE: DO NOT MODIFY 4acf814072c775aedab072b8f0608025d0b35545 #@#
 {
   "action_graph_cache" : {
     "deps" : [
@@ -191,6 +191,7 @@
       "//src/com/facebook/buck/jvm/java:rules",
       "//src/com/facebook/buck/jvm/java:support",
       "//src/com/facebook/buck/jvm/kotlin:kotlin",
+      "//src/com/facebook/buck/jvm/kotlin/config:config",
       "//src/com/facebook/buck/jvm/scala:scala",
       "//src/com/facebook/buck/log:api",
       "//src/com/facebook/buck/log:log",

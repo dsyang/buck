@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.facebook.buck.jvm.kotlin;
+package com.facebook.buck.jvm.kotlin.config;
 
 import com.facebook.buck.cli.BuckConfig;
 import com.facebook.buck.io.ExecutableFinder;
@@ -35,7 +35,7 @@ public class KotlinBuckConfig {
     this.delegate = delegate;
   }
 
-  Supplier<Tool> getKotlinCompiler() {
+  public Supplier<Tool> getKotlinCompiler() {
     Path compilerPath = delegate.getPath("kotlin", "compiler").or(DEFAULT_KOTLIN_COMPILER);
 
     Path compiler = new ExecutableFinder().getExecutable(compilerPath, delegate.getEnvironment());

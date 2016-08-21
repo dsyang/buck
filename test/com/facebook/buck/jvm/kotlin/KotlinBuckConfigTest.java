@@ -16,6 +16,7 @@
 package com.facebook.buck.jvm.kotlin;
 
 import com.facebook.buck.cli.FakeBuckConfig;
+import com.facebook.buck.jvm.kotlin.config.KotlinBuckConfig;
 import com.facebook.buck.util.HumanReadableException;
 
 import org.junit.Before;

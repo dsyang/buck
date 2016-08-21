@@ -109,7 +109,7 @@ import com.facebook.buck.jvm.java.JavaTestDescription;
 import com.facebook.buck.jvm.java.JavacOptions;
 import com.facebook.buck.jvm.java.KeystoreDescription;
 import com.facebook.buck.jvm.java.PrebuiltJarDescription;
-import com.facebook.buck.jvm.kotlin.KotlinBuckConfig;
+import com.facebook.buck.jvm.kotlin.config.KotlinBuckConfig;
 import com.facebook.buck.jvm.kotlin.KotlinLibraryDescription;
 import com.facebook.buck.jvm.kotlin.KotlinTestDescription;
 import com.facebook.buck.jvm.scala.ScalaBuckConfig;

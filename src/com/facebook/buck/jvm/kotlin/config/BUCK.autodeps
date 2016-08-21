@@ -1,0 +1,13 @@
+#@# GENERATED FILE: DO NOT MODIFY 71d704ddb8514aa695389d639ab0934376f71498 #@#
+{
+  "config" : {
+    "deps" : [
+      "//src/com/facebook/buck/io:executable-finder"
+    ],
+    "exported_deps" : [
+      "//src/com/facebook/buck/cli:config",
+      "//src/com/facebook/buck/rules:build_rule",
+      "//third-party/java/guava:guava"
+    ]
+  }
+}

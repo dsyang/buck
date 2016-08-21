@@ -21,6 +21,7 @@ import static com.facebook.buck.jvm.common.ResourceValidator.validateResources;
 import com.facebook.buck.jvm.java.CalculateAbi;
 import com.facebook.buck.jvm.java.DefaultJavaLibrary;
 import com.facebook.buck.jvm.java.JvmLibraryArg;
+import com.facebook.buck.jvm.kotlin.config.KotlinBuckConfig;
 import com.facebook.buck.model.BuildTarget;
 import com.facebook.buck.parser.NoSuchBuildTargetException;
 import com.facebook.buck.rules.BuildRule;
