@@ -19,19 +19,16 @@ package com.facebook.buck.jvm.kotlin;
 import com.facebook.buck.jvm.java.DefaultJavaLibraryBuilder;
 import com.facebook.buck.jvm.java.ForkMode;
 import com.facebook.buck.jvm.java.HasJavaAbi;
-import com.facebook.buck.jvm.java.JavaLibrary;
 import com.facebook.buck.jvm.java.JavaOptions;
 import com.facebook.buck.jvm.java.JavaTest;
 import com.facebook.buck.jvm.java.JavacOptions;
 import com.facebook.buck.jvm.java.TestType;
-import com.facebook.buck.model.Either;
 import com.facebook.buck.parser.NoSuchBuildTargetException;
 import com.facebook.buck.rules.BuildRule;
 import com.facebook.buck.rules.BuildRuleParams;
 import com.facebook.buck.rules.BuildRuleResolver;
 import com.facebook.buck.rules.CellPathResolver;
 import com.facebook.buck.rules.Description;
-import com.facebook.buck.rules.SourcePath;
 import com.facebook.buck.rules.SourcePathResolver;
 import com.facebook.buck.rules.SourcePathRuleFinder;
 import com.facebook.buck.rules.TargetGraph;
@@ -41,7 +38,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.ImmutableSortedSet;
-import java.nio.file.Path;
+
 import java.util.Optional;
 import java.util.logging.Level;
 import org.immutables.value.Value;
@@ -89,7 +86,15 @@ public class KotlinTestDescription implements Description<KotlinTestDescriptionA
       return defaultJavaLibraryBuilder.buildAbi();
     }
 
-    JavaLibrary testsLibrary = resolver.addToIndex(defaultJavaLibraryBuilder.build());
+    DefaultKotlinLibrary testsLibrary = (DefaultKotlinLibrary) resolver.addToIndex(defaultJavaLibraryBuilder.build());
+
+//    Kotlinc kotlinc = kotlinBuckConfig.getKotlinc();
+//    KotlincToJarStepFactory stepFactory = new KotlincToJarStepFactory(
+//        kotlinc,
+//        args.extraKotlincArguments);
+
+//    BuildRuleParams testsLibraryParams = stepFactory.addInputs(params, ruleFinder)
+//         .withAppendedFlavor(JavaTest.COMPILED_TESTS_LIBRARY_FLAVOR);
 
     SourcePathRuleFinder ruleFinder = new SourcePathRuleFinder(resolver);
     SourcePathResolver pathResolver = new SourcePathResolver(ruleFinder);
