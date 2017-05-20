@@ -91,7 +91,7 @@ public class DefaultKotlinLibraryBuilder extends DefaultJavaLibraryBuilder {
       Kotlinc kotlinc = Preconditions.checkNotNull(kotlinBuckConfig).getKotlinc();
       ImmutableCollection<SourcePath> inputs = kotlinc.getInputs();
       for (SourcePath path : inputs) {
-        BuildTargetSourcePath<?> btsp = (BuildTargetSourcePath<?>) path;
+        BuildTargetSourcePath btsp = (BuildTargetSourcePath) path;
         Optional<BuildRule> ruleOptional = buildRuleResolver.getRuleOptional(btsp.getTarget());
         if (!ruleOptional.isPresent()) {
           try {
